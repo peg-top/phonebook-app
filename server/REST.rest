@@ -45,3 +45,21 @@ content-type: application/json
     "name": "Sarah", 
     "number": ""
 }
+
+###
+POST https://phonebook-app-q6i6.onrender.com/api/persons
+content-type: application/json
+
+{ 
+    "name": "Sarah", 
+    "number": ""
+}
+
+###
+POST https://phonebook-app-q6i6.onrender.com/api/persons
+content-type: application/json
+
+{ 
+    "name": "Alexa", 
+    "number": "911-2342323"
+}

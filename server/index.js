@@ -25,12 +25,14 @@ let phonebook = [
 
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors');
+
 const app = express()
 app.use(express.json())
 morgan.token("body", req => JSON.stringify(req.body))
 morgan.token("param", req => JSON.stringify(req.params))
 app.use(morgan(':method :url :status :response-time ms - :body - :param'))
-
+app.use(cors());
 const port = PORT
 
 app.get('/', (req, res) => {

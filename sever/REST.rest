@@ -1,0 +1,47 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/1
+###
+GET http://localhost:3001/api/info
+
+###
+DELETE http://localhost:3001/api/persons/2
+###
+DELETE http://localhost:3001/api/persons/20
+
+###
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{ 
+    "name": "Mary Poppendieck", 
+    "number": "39-23-6423122"
+}
+
+###
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{ 
+    "name": "Andrei", 
+    "number": "39-23-6423122"
+}
+
+###
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{ 
+    "name": "", 
+    "number": "39-23-6423122"
+}
+
+
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{ 
+    "name": "Sarah", 
+    "number": ""
+}
